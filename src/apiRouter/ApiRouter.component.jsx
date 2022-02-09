@@ -6,6 +6,7 @@ import Phone from "../components/screen/phone/Phone.component";
 import Tv from "../components/screen/tv/Tv.component";
 import Refrigeator from "../components/screen/refrigerator/Refrigerator.component";
 import HomePage from "../components/screen/home/HomePage.component";
+import UserAccount from "../components/screen/userAccount/User-account.component";
 const ApiRouter =()=>{
 return(
     <BrowserRouter>
@@ -16,6 +17,7 @@ return(
            <Route  path="/Phone" element={<Phone/>}/>
            <Route  path="/Tv" element={<Tv/>}/>
            <Route  path="/Refrigerator" element={<Refrigeator/>}/>
+           <Route  path="/User-account" element={<UserAccount/>}/>
       </Routes>
     <Footer/>
 </BrowserRouter>

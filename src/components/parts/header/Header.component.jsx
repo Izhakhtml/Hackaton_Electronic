@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import UserAccount from "../../screen/userAccount/User-account.component";
+
 const Header = ()=>{
     return(
         <header className="header">
@@ -8,6 +10,10 @@ const Header = ()=>{
                    <Link to="/Phone"><li>Phone</li></Link> 
                    <Link to="/Tv"><li>Tv</li></Link>                    
                    <Link to="/Refrigerator"><li>Refrigerator</li></Link> 
+                   <Link to="/User-account"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
+                   </Link> 
+                  
               </nav>
         </header>
     )    
