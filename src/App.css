@@ -1,6 +1,55 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.chatbotSection {
+  width: 100vw;
+  height: 100vh;
+}
+
+.chatbotContainer{
+  position: fixed;
+  margin-left: 73vw;
+  margin-top: 24.5vh;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  height: 70vh;
+}
+.chatbotCloseBtn {
+  position: absolute;
+  top: 1.3vh;
+  right: 1vw;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chatbotInitiateBtn{
+  position: fixed;
+  left: 95vw;
+  top: 90vh;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chatClosed {
+  display: none;
+}
+
+.chatbotInitiateBtn img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
 .App{
   display: grid;
   grid-template-areas: 
@@ -55,3 +104,4 @@ footer .socialMediaContact > a {
 footer .socialMediaContact > a:hover {
   opacity: 2;
 }
+
