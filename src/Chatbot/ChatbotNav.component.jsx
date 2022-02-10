@@ -1,6 +1,4 @@
 
-
-
 const ChatbotNavi = () => {
 
     return (

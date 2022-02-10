@@ -25,6 +25,11 @@ class ActionProvider {
       this.addMessageToState(naviMessage);
   }
 
+  sayMyName = () => {
+    const myName = this.createChatbotMessage("אבי ג'י, אבשה ג'י עד יום מותי");
+    this.addMessageToState(myName);
+  }
+
   addMessageToState = (message) => {
     this.setState(prevState => ({
       ...prevState,
