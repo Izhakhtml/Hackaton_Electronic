@@ -13,6 +13,7 @@ class MessageParser {
 
     if(recievedMessage.includes('עזרה')){
       this.actionProvider.handleHelp();
+      this.actionProvider.handleNavigator();
     }
   }
 }

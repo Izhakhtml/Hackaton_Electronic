@@ -15,6 +15,16 @@ class ActionProvider {
     this.addMessageToState(helpMessage);
   }
 
+  handleNavigator = () => {
+    const naviMessage = this.createChatbotMessage(
+      'אולי הלינקים האלו יעזרו',
+      {
+        widget: 'cbNav'
+      }
+      );
+      this.addMessageToState(naviMessage);
+  }
+
   addMessageToState = (message) => {
     this.setState(prevState => ({
       ...prevState,
