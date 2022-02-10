@@ -9,20 +9,17 @@ import ActionProvider from "./ActionProvider";
 
 const ChatbotComponent = () => {
 
-    const[style, setStyle] = useState("chatbotContainer")
+    const[style, setStyle] = useState("chatClosed")
 
-    const closeCB = () => {
-        setStyle("chatClosed");
-    }
-
-    const openCB = () => {
-        setStyle("chatbotContainer");
+    const styleToggle = (state) => {
+        if(state == true) setStyle("chatbotContainer");
+        else setStyle("chatClosed");
     }
 
     return (
         <div className= "chatbotSection">
         <div className={style}>
-            <button onClick={closeCB} className="chatbotCloseBtn">X</button>
+            <button onClick={() => styleToggle(false)} className="chatbotCloseBtn">X</button>
         <Chatbot
           config={config}
           actionProvider={ActionProvider}
@@ -30,7 +27,7 @@ const ChatbotComponent = () => {
         />
         
       </div>
-        <button onClick={openCB} className="chatbotInitiateBtn"><img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreesvg.org%2Fimg%2F1538298822.png&f=1&nofb=1" /></button>
+        <button onClick={() => styleToggle(true)} className="chatbotInitiateBtn"><img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreesvg.org%2Fimg%2F1538298822.png&f=1&nofb=1" /></button>
         </div>
     )
 }

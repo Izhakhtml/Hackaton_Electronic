@@ -15,8 +15,8 @@
 
 .chatbotContainer{
   position: fixed;
-  margin-left: 73vw;
-  margin-top: 24.5vh;
+  margin-left: 75%;
+  margin-top: 29.5%;
 }
 
 .react-chatbot-kit-chat-inner-container {
@@ -39,6 +39,11 @@
   cursor: pointer;
 }
 
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@import url('https://kit.fontawesome.com/a076d05399.js');
+
+
 .chatClosed {
   display: none;
 }
@@ -47,6 +52,12 @@
   width: 40px;
   height: 40px;
 }
+
+.chatbotLinkBtns button a {
+  text-decoration: none;
+  color: black;
+}
+
 
 
 
@@ -65,6 +76,8 @@
   grid-area: header;
  border-bottom: 2px solid black;}
 .footer{
+  /* justify-content: center; */
+  align-items: center;
   grid-area: footer; 
   border-top: 2px solid black;}
 .nav{
@@ -88,20 +101,48 @@ footer {
   text-align: center;
 }
 footer .socialMediaContact > a {
-  font-size: 20px;
-  width: 36px;
-  height: 36px;
+  font-size: 30px;
+  width: 46px;
+  height: 40px;
   line-height: 36px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  box-shadow: 0 0 0 2px gold;
-  margin: 0 8px;
-  color: gold;
+  box-shadow: 0 0 0 2px rgb(0, 0, 0);
+  margin: 19px 11px;
+  color: rgb(0, 0, 0);
   opacity: 0.75;
 }
 
 .footer .socialMediaContact > a:hover {
   opacity: 2;
 }
+
+#theNav {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+#theNav a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 0% 2.3%;
+  text-decoration: none;
+  font-size: 220%;
+  font-family: 'Kumar One', cursive;
+  justify-content: space-evenly;
+}
+#theNav a:hover {
+  background-color: silver;
+  color: rgb(0, 0, 0);
+}
+#theNav a.active {
+  color: rgb(107, 107, 107);
+}
+#logInIcon{
+  width: 30px;
+  height: 30px;
+}
+
+
 

@@ -11,8 +11,13 @@ class MessageParser {
       this.actionProvider.handleHello();
     }
 
+    if(recievedMessage.includes('שם')){
+      this.actionProvider.sayMyName();
+    }
+
     if(recievedMessage.includes('עזרה')){
       this.actionProvider.handleHelp();
+      this.actionProvider.handleNavigator();
     }
   }
 }
