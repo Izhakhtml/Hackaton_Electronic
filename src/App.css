@@ -1,6 +1,66 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.chatbotSection {
+  width: 100vw;
+  height: 100vh;
+}
+
+.chatbotContainer{
+  position: fixed;
+  margin-left: 75%;
+  margin-top: 29.5%;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  height: 100%;
+}
+.chatbotCloseBtn {
+  position: absolute;
+  top: 1.3vh;
+  right: 1vw;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chatbotInitiateBtn{
+  position: fixed;
+  left: 95vw;
+  top: 90vh;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@import url('https://kit.fontawesome.com/a076d05399.js');
+
+
+.chatClosed {
+  display: none;
+}
+
+.chatbotInitiateBtn img {
+  width: 40px;
+  height: 40px;
+}
+
+.chatbotLinkBtns button a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
 .App{
   display: grid;
   grid-template-areas: 
@@ -16,16 +76,41 @@
   grid-area: header;
  border-bottom: 2px solid black;}
 .footer{
+  /* justify-content: center; */
+  align-items: center;
   grid-area: footer; 
   border-top: 2px solid black;}
 .nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
 li{
   list-style: none;
   text-decoration: none;
+}
+.user_details{
+  background: rgb(124, 123, 123);
+  width: 30vw;
+  height: 30vh;
+  margin-left:80%;
+  margin-top: 10%;
+  box-shadow: -5px -2px 12px 12px rgb(92, 81, 81) ;
+  padding: 10px;
+  border-radius: 10px;
+  color:white;
+  font-size: larger;
+}
+.nav img{
+  width: 20px;
+  height: 20px;
+}
+a{
+  font-size: 15px;
+}
+#btn_send{
+padding: 10px;
+border-radius: 10px;
+}
   
 }
