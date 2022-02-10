@@ -15,12 +15,12 @@
 
 .chatbotContainer{
   position: fixed;
-  margin-left: 73vw;
-  margin-top: 24.5vh;
+  margin-left: 75%;
+  margin-top: 29.5%;
 }
 
 .react-chatbot-kit-chat-inner-container {
-  height: 70vh;
+  height: 100%;
 }
 .chatbotCloseBtn {
   position: absolute;
@@ -46,6 +46,11 @@
 .chatbotInitiateBtn img {
   width: 40px;
   height: 40px;
+}
+
+.chatbotLinkBtns button a {
+  text-decoration: none;
+  color: black;
 }
 
 
