@@ -1,6 +1,55 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.chatbotSection {
+  width: 100vw;
+  height: 100vh;
+}
+
+.chatbotContainer{
+  position: fixed;
+  margin-left: 73vw;
+  margin-top: 24.5vh;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  height: 100%;
+}
+.chatbotCloseBtn {
+  position: absolute;
+  top: 1.3vh;
+  right: 1vw;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chatbotInitiateBtn{
+  position: fixed;
+  left: 95vw;
+  top: 90vh;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chatClosed {
+  display: none;
+}
+
+.chatbotInitiateBtn img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
 .App{
   display: grid;
   grid-template-areas: 
@@ -50,3 +99,32 @@ a{
 padding: 10px;
 border-radius: 10px;
 }
+  
+
+footer {
+  bottom: 0%;
+  left: 0;
+  bottom: 0;
+  /* width: 100%; */
+  /* height: 150px; */
+  margin-top: 15%;
+  text-align: center;
+}
+footer .socialMediaContact > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px gold;
+  margin: 0 8px;
+  color: gold;
+  opacity: 0.75;
+}
+
+.footer .socialMediaContact > a:hover {
+  opacity: 2;
+}
+
