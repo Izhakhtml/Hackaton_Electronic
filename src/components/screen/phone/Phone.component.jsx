@@ -1,8 +1,15 @@
+import PhoneCard from "./Phone-card.component";
+import {PhoneContext} from "../../../context/Phone-context.component"
+import { useContext } from "react";
 const Phone =()=>{
-
+const phone = useContext(PhoneContext);
 return(
     <div>
-       <h1>Phone</h1>
+       {
+         phone.phone.map((res)=>
+         <PhoneCard item={res}/>
+         )
+       }
     </div>
 )    
 }

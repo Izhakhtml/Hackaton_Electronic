@@ -1,7 +1,15 @@
+import { useContext } from "react";
+import {RefrigeContext} from "../../../context/Refrigerator-context.component"
+import RfrigeCard from "./Rfrige-card.component"
 const Refrigeator =()=>{
+const{refrige} = useContext(RefrigeContext)
 return(
     <div>
-      <h1>Refrigeator</h1>
+      {
+        refrige.map((res)=>{
+         <RfrigeCard item={res}/>
+        })
+      }
     </div>
 )    
 }
