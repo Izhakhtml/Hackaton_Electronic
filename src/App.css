@@ -202,28 +202,5 @@ footer .socialMediaContact > a {
 #theNav {
   background-color: rgb(255, 255, 255);
   overflow: hidden;
+  
 }
-#theNav a {
-  float: left;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 0% 2.3%;
-  text-decoration: none;
-  font-size: 220%;
-  font-family: 'Kumar One', cursive;
-  justify-content: space-evenly;
-}
-#theNav a:hover {
-  background-color: silver;
-  color: rgb(0, 0, 0);
-}
-#theNav a.active {
-  color: rgb(107, 107, 107);
-}
-#logInIcon{
-  width: 30px;
-  height: 30px;
-}
-
-
-

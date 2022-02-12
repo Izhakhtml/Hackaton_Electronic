@@ -1,8 +1,7 @@
-{/* <script src="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" ></script>; */}
-
-const Footer = () => {
-  return (
+const Footer = ()=>{
+return(
     <footer className="footer">
+<<<<<<< HEAD
      
      <div class="socialMediaContact">
      <a href="#"><i class="fa fa-facebook" style={{color: "blue"}}></i></a
@@ -13,6 +12,8 @@ const Footer = () => {
         
         
       </div>
+=======
+>>>>>>> bbe4a19936570d853a5306fc68eab91bfbf8ebbd
     </footer>
         
   );
