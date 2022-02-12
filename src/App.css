@@ -1,26 +1,58 @@
 .App {
   text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  min-width: 100vw;
+  /* background-color: #282c34; */
+  /* min-height: 100vh;
+  min-width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
-
+#a_tag{
+  text-decoration: none;
+  color: black;
+}
 .chatbotSection {
   width: 100vw;
   height: 100vh;
 }
-
-.chatbotContainer{
-  position: fixed;
-  margin-left: 75%;
-  margin-top: 29.5%;
+input{
+  border-radius: 10px;
+  height: 38px;
 }
+.chatbotContainer {
+  position: fixed;
+  margin-left: 73%;
+  margin-top: 12.5%;
+  z-index: 1000;
+
+}
+.form input{
+  border-radius: 13%;
+  height: 30px;
+  }
+  .form button{
+    font-family:'Kumar One', cursive; 
+    color: aliceblue;
+    background-color:#000000
+  }
+  .form{
+    text-shadow: 4px 4px 3px rgb(0, 0, 0);
+    box-shadow: 15px 15px 10px #000000;
+    border-radius: 10%;
+    margin-left: 40%;
+    width: 250px;
+    background-color: darkgrey;
+    font-family:'Kumar One', cursive; 
+    color: #ffffff;
+     grid-area: main;
+     padding: 50px;
+  }
 
 .react-chatbot-kit-chat-inner-container {
   height: 100%;
+  z-index: 1000;
+
 }
 .chatbotCloseBtn {
   position: absolute;
@@ -33,10 +65,11 @@
 
 .chatbotInitiateBtn{
   position: fixed;
-  left: 95vw;
-  top: 90vh;
+  left: 93vw;
+  top: 85vh;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1000;
 }
 
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
@@ -58,19 +91,29 @@
   color: black;
 }
 
-
-
-
 .App{
   display: grid;
   grid-template-areas: 
   'header header header header header'
   'main main main main main'
   'main main main main main'
+  'main main main main main'
   'footer footer footer footer footer';
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 15% 40% 25%;
+  grid-template-rows: 30% 30% 5%;
+}
+.container_card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 23%;
+  margin-bottom: 20px;
+}
+.div{
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .header{
   grid-area: header;
@@ -85,19 +128,26 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.homePage{
+  grid-area: main;
+}
+h1{
+  grid-area: main;
+}
 li{
   list-style: none;
   text-decoration: none;
 }
 .user_details{
+  grid-area: main;
   background: rgb(124, 123, 123);
   width: 30vw;
-  height: 30vh;
-  margin-left:80%;
-  margin-top: 10%;
-  box-shadow: -5px -2px 12px 12px rgb(92, 81, 81) ;
+  height: 40vh;
+  margin-left:35%;
+  box-shadow: -5px -2px 12px 12px rgb(27, 25, 25) ;
   padding: 10px;
   border-radius: 10px;
+  margin-bottom:20%;
   color:white;
   font-size: larger;
 }
@@ -112,8 +162,16 @@ a{
 padding: 10px;
 border-radius: 10px;
 }
-  
-
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Devonshire&family=Estonia&family=Roboto:wght@100&display=swap');
+.homeImage h1{
+font-family: 'Bad Script', cursive;
+font-family: 'Devonshire', cursive;
+font-family: 'Estonia', cursive;
+font-family: 'Roboto', sans-serif;
+}
+.homeImage{
+  width: 90%;
+}
 footer {
   bottom: 0%;
   left: 0;
