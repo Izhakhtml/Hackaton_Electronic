@@ -4,9 +4,9 @@ import { useContext } from "react";
 const Computer =()=>{
 const {computer} = useContext(ComputerContext);
 return(
-    <div>
+    <div className="div">
        {
-         computer.map((res)=>
+            computer .map((res)=>
          <ComputerCard item={res}/>
          )
        }

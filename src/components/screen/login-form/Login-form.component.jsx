@@ -1,14 +1,14 @@
 const LoginForm =()=>{  
 return(
-    <div>
+    <div className="form">
          <form action="">
-            <label htmlFor="">First name:</label><br />
+         <b><label htmlFor="">First name:</label></b><br />
                 <input type="text" /><br />
-            <label htmlFor="">Last name:</label><br />
+          <b><label htmlFor="">Last name:</label></b><br />
                 <input type="text" /><br />
-            <label htmlFor="">Email:</label><br />
+           <b><label htmlFor="">Email:</label></b><br />
                 <input type="text" /><br />
-            <label htmlFor="">Password:</label><br />
+            <b><label htmlFor="">Password:</label></b><br />
                 <input type="text" /><br />
          </form>
             <button>SEND</button>

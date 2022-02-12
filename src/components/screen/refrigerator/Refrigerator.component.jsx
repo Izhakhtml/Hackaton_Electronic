@@ -4,11 +4,11 @@ import RfrigeCard from "./Rfrige-card.component"
 const Refrigeator =()=>{
 const{refrige} = useContext(RefrigeContext)
 return(
-    <div>
+    <div className="div">
       {
-        refrige.map((res)=>{
+        refrige.map((res)=>
          <RfrigeCard item={res}/>
-        })
+        )
       }
     </div>
 )    

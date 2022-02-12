@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function RfrigeCard({item}) {
   return (
+    <div className='container_card'>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -28,5 +29,6 @@ export default function RfrigeCard({item}) {
         <Button size="small">Learn More</Button> 
       </CardActions>
     </Card>
+    </div>
   );
 }

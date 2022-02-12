@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function TvCard({item}) {
   return (
+    <div className='container_card'>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -20,7 +21,7 @@ export default function TvCard({item}) {
          {item.ProductName}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-         {item.price}
+         {item.Price}
         </Typography>
       </CardContent>
       <CardActions>
@@ -28,5 +29,6 @@ export default function TvCard({item}) {
         <Button size="small">Learn More</Button> 
       </CardActions>
     </Card>
+    </div>
   );
 }

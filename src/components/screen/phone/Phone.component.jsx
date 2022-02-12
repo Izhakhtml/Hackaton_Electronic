@@ -4,7 +4,7 @@ import { useContext } from "react";
 const Phone =()=>{
 const phone = useContext(PhoneContext);
 return(
-    <div>
+    <div className="div">
        {
          phone.phone.map((res)=>
          <PhoneCard item={res}/>

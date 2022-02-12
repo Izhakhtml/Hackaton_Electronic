@@ -8,16 +8,19 @@ import Typography from '@mui/material/Typography';
 
 export default function ComputerCard({item}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <div className='container_card'>
+   <Card sx={{ maxWidth: 345 }} >
       <CardMedia
         component="img"
         alt="green iguana"
-        height="140"
+        height="100"
+        width="30"
         image={item.Photo}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
          {item.ProductName}
+         {item.ID}
         </Typography>
         <Typography variant="body2" color="text.secondary">
          {item.price}
@@ -27,6 +30,8 @@ export default function ComputerCard({item}) {
         <Button size="small">Share</Button> 
         <Button size="small">Learn More</Button> 
       </CardActions>
-    </Card>
+    </Card>      
+    </div>
+ 
   );
 }

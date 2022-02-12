@@ -2,13 +2,13 @@ import { useContext } from "react";
 import { TvContext } from "../../../context/Tv-context.component";
 import TvCard from "./Tv-card.component";
 const Tv =()=>{
-const{tv}=useContext(TvContext)
+const tv=useContext(TvContext)
 return(
-    <div>
+    <div className="div">
       {
-        tv.map((res)=>{
-       <TvCard item={res}/>
-        })
+        tv.tv.map((res)=>
+       <TvCard item={res}/>          
+        )
       }
     </div>
 )    
