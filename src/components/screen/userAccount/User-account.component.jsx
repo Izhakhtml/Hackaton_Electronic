@@ -1,10 +1,8 @@
-import'../login-form/Login-form.component'
-import HomePage from '../home/HomePage.component';
 import LoginForm from '../login-form/Login-form.component';
 import { UserContext } from '../../../context/Users-context';
 import { useContext } from 'react';
 const UserAccount =()=>{
-const user =useContext(UserContext);
+const user = useContext(UserContext);
 return(
     <div className="user_details">
         
